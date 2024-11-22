@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Tournament - Login & Register</title>
+    <link rel="stylesheet" href="o.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Header Tabs -->
+        <div class="auth-header">
+            <span id="openLogin" class="tab active">Login</span>
+            <span id="openRegister" class="tab">Sign Up</span>
+            <div class="indicator"></div>
+        </div>
+
+        <!-- Form Wrapper -->
+        <div class="form-wrapper">
+            <!-- Login Form -->
+            <form id="loginForm" class="auth-form active" aria-hidden="false">
+                <h2>Welcome Back</h2>
+                <p>Login to join the action.</p>
+                <div class="input-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p class="switch-info">Don't have an account? <span id="switchToRegister">Sign Up</span></p>
+            </form>
+
+            <!-- Registration Form -->
+            <form id="registerForm" class="auth-form" aria-hidden="true">
+                <h2>Create an Account</h2>
+                <p>Join the community today!</p>
+                <div class="input-group">
+                    <label for="register-name">Full Name</label>
+                    <input type="text" id="register-name" placeholder="Enter your name" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-dob">Date of Birth</label>
+                    <input type="date" id="register-dob" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-phone">Phone Number</label>
+                    <input type="tel" id="register-phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" placeholder="Create a password" required>
+                </div>
+                
+                <div class="input-group terms">
+                    <div class="input-group terms">
+                        <input type="checkbox" id="register-terms" required>
+                        <label for="register-terms">I agree to the <a href="#">Terms and Conditions</a></label>
+                    </div>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <p class="switch-info">Already have an account? <span id="switchToLogin">Login</span></p>
+            </form>
+        </div>
+    </div> 
+    
+    <script src="o.js"></script>
+</body>
+</html>
